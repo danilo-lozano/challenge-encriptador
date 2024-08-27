@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a89b24;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 180px;
+    height: auto;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #838514;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 220px;
+    margin-bottom: 300px;
+    margin-left: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Papyrus', sans serif;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#textoEntrada{
+    font-family: 'Papyrus', sans serif;
+}
+
+.advertencia {
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-family: 'Papyrus', sans serif;
+}
+
+.botones {
+    margin-bottom: 10px;
+}
+
+button {
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#botonEncriptar {
+    background-color: #007bff;
+    font-family: 'Papyrus', sans serif;
+    font-size: 15px;
+}
+
+#botonEncriptar:hover {
+    background-color: #0056b3;
+}
+
+#botonDesencriptar {
+    background-color: #ff5733;
+    font-family: 'Papyrus', sans serif;
+    font-size: 15px;
+}
+
+#botonDesencriptar:hover {
+    background-color: #c70039;
+}
+
+.recuadroDerecho {
+    background-color: #838514;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#mensaje{
+    font-family: 'Papyrus', sans serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+
+#instruccion{
+    font-family: 'Papyrus', sans serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 1px;
+}
+
+.imagenDerecha {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-family: 'Papyrus', sans serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#botonCopiar {
+    margin-top: 20px;
+    background-color: #28a745;
+    font-family: 'Papyrus', sans serif;
+    font-size: 15px;
+}
+
+#botonCopiar:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background-color: #838514;
+    text-align: center;
+    font-family: 'Papyrus', serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    height: 35px;
+    line-height: 35px;
+}
+
+@media (max-width: 768px) {
+    .contenedorPrincipal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor, .recuadroDerecho {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .recuadroDerecho {
+        order: 2;
+    }
+}
+
+@media (max-width: 375px) {
+    .contenedorPrincipal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor, .recuadroDerecho{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .recuadroDerecho{
+        order: 2;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #botonEncriptar {
+        margin-bottom: 10px;
+    }
+}
